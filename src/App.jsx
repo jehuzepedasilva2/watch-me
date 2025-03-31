@@ -1,9 +1,9 @@
 import './App.css'
-import Watch from './Watch.jsx'
+import Clock from './Clock.jsx'
 
 function App() {
   return (
-    <Watch />
+    <Clock />
   );
 }
 

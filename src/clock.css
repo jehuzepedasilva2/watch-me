@@ -1,0 +1,13 @@
+#clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.separator > p {
+  display: flex;
+  font-size: 150px;
+  padding-bottom: 25px;
+  color: var(--on-color)
+}

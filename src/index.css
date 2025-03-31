@@ -5,14 +5,18 @@
 }
 
 :root {
-  --primary-color: #FFFFFF;
+
+  --off-color: #131313;
+
+  --on-color: #1ce601;
   --secondary-color: #202021;
 
   --segment-height: 80px;
-  --segment-line-width: 12px;
-  --segment-s1-width: 8px;
-  --segment-s2-width: 4px;
+  --segment-line-width: 16px;
+  --segment-s1-width: 16px;
+  --segment-s2-width: 0px;
   --segment-s3-width: var(--segment-line-width);
+  --segment-rotation-deg: 6deg;
 }
 
 #root {
