@@ -10,13 +10,8 @@
 
   --on-color: #1ce601;
   --secondary-color: #202021;
-
-  --segment-height: 80px;
-  --segment-line-width: 16px;
-  --segment-s1-width: 16px;
-  --segment-s2-width: 0px;
-  --segment-s3-width: var(--segment-line-width);
-  --segment-rotation-deg: 6deg;
+  --segment-l: 45px;
+  --segment-w: 12px;
 }
 
 #root {

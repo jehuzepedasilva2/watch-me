@@ -1,7 +1,7 @@
 .number {
   display: grid;
-  grid-template-columns: 14px 40px 40px 14px;
-  grid-template-rows: 14px 40px 40px 14px 40px 40px 14px;
+  grid-template-columns: var(--segment-w) var(--segment-l) var(--segment-l) var(--segment-w);
+  grid-template-rows: var(--segment-w) var(--segment-l) var(--segment-l) var(--segment-w) var(--segment-l) var(--segment-l) var(--segment-w);
   grid-template-areas: 
          ". top top . "
     "left-top . . right-top"
