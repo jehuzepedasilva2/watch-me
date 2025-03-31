@@ -293,7 +293,8 @@ export default function Clock() {
   return (
     <div id='clock'>
       <div className='am-pm'>
-        <p>{ampm}</p>
+        <p className={`l am ${ampm == 'AM' ? 'on' : ''}`}>AM</p>
+        <p className={`l pm ${ampm == 'PM' ? 'on' : ''}`}>PM</p>
       </div>
       <Hours time={time.getHours() == 0 ? 12 : time.getHours()} />
       <div className='separator'><p>:</p></div>

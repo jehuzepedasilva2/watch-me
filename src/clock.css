@@ -19,6 +19,7 @@
 
 div.on {
   background-color: var(--on-color);
+  box-shadow: 0px 2px 5px greenyellow;
 }
 
 .bar {
@@ -65,18 +66,33 @@ div.on {
   display: flex;
   font-size: 150px;
   padding-bottom: 25px;
-  color: var(--on-color)
+  color: var(--on-color);
+  text-shadow: 0px 2px 5px greenyellow;
 }
 
 .am-pm {
   display: flex;
+  height: 100%;
   flex-direction: column;
+  padding-top: 100px;
   padding-bottom: 100px;
   padding-right: 50px;
+  gap: 4rem;
   color: var(--on-color);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.am-pm p {
+.l {
   font-size: 20px;
+  color: var(--off-color);
 }
+
+.l.on {
+  color: var(--on-color);
+  text-shadow: 0px 2px 5px greenyellow;
+}
+
+.l::before {
+  content: '●';
+  font-size: 25px;
+} 
