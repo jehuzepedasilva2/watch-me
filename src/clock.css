@@ -1,3 +1,59 @@
+.number {
+  display: grid;
+  grid-template-columns: 14px 40px 40px 14px;
+  grid-template-rows: 14px 40px 40px 14px 40px 40px 14px;
+  grid-template-areas: 
+         ". top top . "
+    "left-top . . right-top"
+    "left-top . . right-top"
+         ". mid mid ."
+    "left-bot . . right-bot"
+    "left-bot . . right-bot"
+         ". bot bot .";
+}
+
+.number-pairs {
+  display: flex;
+  gap: 1rem;
+}
+
+div.on {
+  background-color: var(--on-color);
+}
+
+.bar {
+  background-color: var(--off-color);
+}
+
+.barA {
+  grid-area: top;
+}
+
+.barB {
+  grid-area: right-top;
+}
+
+.barC {
+  grid-area: right-bot;
+}
+
+.barD {
+  grid-area: bot;
+}
+
+.barE {
+  grid-area: left-bot;
+}
+
+.barF {
+  grid-area: left-top;
+}
+
+.barG {
+  grid-area: mid;
+}
+
+
 #clock {
   display: flex;
   justify-content: center;
