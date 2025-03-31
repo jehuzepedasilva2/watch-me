@@ -10,7 +10,7 @@
   --off-color: #131313;
 
   --on-color: #1ce601;
-  --secondary-color: #2c2828;
+  --secondary-color: #222020;
   --segment-l: 45px;
   --segment-w: 12px;
 }
@@ -26,6 +26,6 @@
   align-items: center; 
   background-color: var(--secondary-color);
 
-  background: radial-gradient(circle, var(--secondary-color) 0%, #0f0f0f 100%);
+  background: radial-gradient(circle, var(--secondary-color) 0%, #000000 100%);
 
 }
