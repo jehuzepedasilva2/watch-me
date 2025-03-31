@@ -1,14 +1,29 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  --primary-color: #000000;
+  --primary-color: #FFFFFF;
+  --secondary-color: #202021;
+
+  --segment-height: 80px;
+  --segment-line-width: 12px;
+  --segment-s1-width: 8px;
+  --segment-s2-width: 4px;
+  --segment-s3-width: var(--segment-line-width);
 }
 
 #root {
 
-  display: flex
+  width: 100vw;
+  height: 100vh;
+
+  /* for testing/previewing */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: var(--secondary-color);
 
 }
