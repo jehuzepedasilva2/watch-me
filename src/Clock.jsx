@@ -4,6 +4,8 @@ import {
   useEffect, 
   useRef,
 } from 'react';
+// npm install --save prop-types
+import PropTypes from 'prop-types';
 
 const convert = {
   0: ['barA', 'barB', 'barC', 'barD', 'barE', 'barF'],
@@ -30,9 +32,22 @@ function turnAllOff(refs) {
   }
 }
 
+Hours.propTypes = {
+  time: PropTypes.number,
+}
+
+Minutes.propTypes = {
+  time: PropTypes.number,
+}
+
+Seconds.propTypes = {
+  time: PropTypes.number,
+}
 
 
 function Hours({ time }) {
+
+  time = time % 12;
 
   const hourSegments = useRef({
     left: {
