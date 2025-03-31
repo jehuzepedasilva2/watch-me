@@ -273,8 +273,13 @@ export default function Clock() {
     return () => clearInterval(intervalId);
   }, []);
 
+  const ampm = time.getHours() >= 12 ? 'PM' : 'AM';
+
   return (
     <div id='clock'>
+      <div className='am-pm'>
+        <p>{ampm}</p>
+      </div>
       <Hours time={time.getHours() == 0 ? 12 : time.getHours()} />
       <div className='separator'><p>:</p></div>
       <Minutes time={time.getMinutes()} />
