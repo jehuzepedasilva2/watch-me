@@ -48,6 +48,9 @@ Seconds.propTypes = {
 function Hours({ time }) {
 
   time = time % 12;
+  if (time === 0) {
+    time = 12;
+  }
 
   const hourSegments = useRef({
     left: {
